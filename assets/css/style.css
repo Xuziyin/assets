@@ -1,0 +1,973 @@
+@charset "UTF-8";
+body {
+  background: #E4E4E4;
+}
+
+a {
+  transition: 0.4s;
+}
+
+header {
+  width: 100%;
+  z-index: 999;
+}
+header .navbar {
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+header .navbar .search-btn-light {
+  background: #F8F8F8;
+  border: 1px solid #D3D3D3;
+}
+header .navbar .search-btn-light:hover {
+  background: #F0F0F0;
+}
+header .navbar .search-btn-light:focus {
+  background: #F0F0F0;
+}
+
+.container .article-list {
+  margin-top: 15px;
+}
+.container .article-list .post {
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+.container .article-list .post .header-img {
+  width: 100%;
+  background: #ffffff;
+}
+.container .article-list .post .header-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.container .article-list .post .header-img a:after {
+  content: "";
+  padding-bottom: 37.5%;
+  display: block;
+}
+.container .article-list .post .entry-header .entry-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 20px 12px 20px;
+}
+.container .article-list .post .entry-header .entry-title a {
+  color: #222222;
+}
+.container .article-list .post .entry-summary {
+  padding: 20px;
+}
+.container .article-list .post .entry-summary p {
+  font-size: 15px;
+  color: #444444;
+  line-height: 25px;
+}
+.container .article-list .post .read-more {
+  margin: 0;
+  font-size: 15px;
+}
+.container .article-list .post .read-more .read-more-btn {
+  width: 140px;
+  border: 1px solid #007ACC;
+  color: #007ACC;
+  padding: 10px 20px;
+}
+.container .article-list .post .read-more .read-more-btn span, .container .article-list .post .read-more .read-more-btn i {
+  transition: 0.4s;
+}
+.container .article-list .post .read-more .read-more-btn i {
+  margin-left: 5px;
+}
+.container .article-list .post .read-more .read-more-btn:hover {
+  padding: 10px 17px;
+}
+.container .article-list .post .read-more .read-more-btn:hover span {
+  margin: 0 3px;
+}
+.container .article-list .post .article-info {
+  padding: 10px 25px;
+}
+.container .article-list .post .article-info .info {
+  float: left;
+  margin-right: 20px;
+  height: 29px;
+}
+.container .article-list .post .article-info a, .container .article-list .post .article-info span {
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.container .article-list .post .article-info a:hover {
+  color: #76839B;
+}
+.container .article-list .post .article-info .icon {
+  margin-right: 4px;
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.container .article-list .post .article-info .tags a {
+  margin-right: 3px;
+}
+
+.main-content {
+  margin-top: 15px;
+}
+
+.sidebar section {
+  margin-left: 20px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.sidebar section h4 {
+  line-height: 22px;
+  padding: 12px 2px;
+  font-size: 16px;
+  border-bottom: 2px solid #6C757D;
+  margin: 0 18px 10px 18px;
+  font-weight: 700;
+}
+.sidebar section ul {
+  list-style: none;
+  padding: 0 18px 18px 18px;
+}
+.sidebar section ul li {
+  padding: 8px 0;
+  font-size: 13px;
+}
+.sidebar section ul li a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.sidebar section ul li img {
+  border-radius: 50%;
+}
+.sidebar section .personal-information {
+  padding: 0 18px 18px 18px;
+}
+.sidebar section .personal-information .user {
+  width: 100%;
+}
+.sidebar section .personal-information .user .avatar {
+  width: 72px;
+  height: 72px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+.sidebar section .personal-information .user .user-name {
+  color: #6C757D;
+  display: block;
+  font-size: 16px;
+}
+.sidebar section .personal-information .user .user-name, .sidebar section .personal-information .user .introduction {
+  margin: 0;
+  text-align: center;
+  line-height: 20px;
+}
+.sidebar section .personal-information .user .introduction {
+  font-size: 14px;
+}
+.sidebar section .personal-information .website {
+  padding-top: 18px;
+  margin-top: 18px;
+}
+.sidebar section .personal-information .website .info {
+  width: 33.33%;
+  text-align: center;
+  font-size: 14px;
+}
+.sidebar section .personal-information .website .info .quantity {
+  font-size: 20px;
+  margin: 0;
+}
+.sidebar section .ltags-list {
+  padding: 0 18px 18px 18px;
+}
+.sidebar section .ltags-list a {
+  color: #707281;
+  padding: 8px 10px;
+  margin: 2px;
+  border: 1px solid #707281;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  transition: 0.3s;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.sidebar section .ltags-list a:hover {
+  background: #707281;
+  color: #ffffff;
+}
+.sidebar section .ltags-list a:focus {
+  background: #707281;
+  color: #ffffff;
+}
+.sidebar .latest-articles li a {
+  transition: 0.4s;
+}
+.sidebar .latest-articles li a .article-img {
+  display: none;
+  transition: 0.4s;
+}
+.sidebar .latest-articles li a p {
+  margin: 0;
+}
+.sidebar .latest-articles .latest-articles-active {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.sidebar .latest-articles .latest-articles-active .article-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sidebar .latest-articles .latest-articles-active p {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 7px;
+}
+.sidebar .latest-articles .latest-articles-active:after {
+  content: "";
+  display: block;
+  padding-bottom: 44%;
+}
+
+.pagination-nav {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pagination-nav li {
+  border-radius: unset;
+}
+.pagination-nav li a {
+  border-radius: unset;
+  color: #6C757D !important;
+}
+.pagination-nav .active a {
+  background-color: #6C757D !important;
+  color: #ffffff !important;
+  border-color: #6C757D !important;
+}
+.pagination-nav .active a:hover {
+  background: #5A6268 !important;
+}
+
+footer .container {
+  padding: 20px 20px;
+  text-align: center;
+}
+footer .container a, footer .container span {
+  margin: 0 5px;
+  color: #525252;
+  font-size: 15px;
+}
+
+.article-page, .archive, .page {
+  margin-top: 15px;
+}
+.article-page main, .archive main, .page main {
+  border: 1px solid #DEDEDE;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.article-page main .entry-header .entry-title, .archive main .entry-header .entry-title, .page main .entry-header .entry-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 20px 12px 20px;
+}
+.article-page main .entry-header .entry-title a, .archive main .entry-header .entry-title a, .page main .entry-header .entry-title a {
+  color: #222222;
+}
+.article-page main .header-img, .archive main .header-img, .page main .header-img {
+  width: 100%;
+  background: #ffffff;
+}
+.article-page main .header-img a, .archive main .header-img a, .page main .header-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.article-page main .header-img a:after, .archive main .header-img a:after, .page main .header-img a:after {
+  content: "";
+  padding-bottom: 37.5%;
+  display: block;
+}
+.article-page main .header-img a:after, .archive main .header-img a:after, .page main .header-img a:after {
+  content: "";
+  display: block;
+  padding-bottom: 44%;
+}
+.article-page main .article-info, .archive main .article-info, .page main .article-info {
+  padding: 10px 25px;
+}
+.article-page main .article-info .info, .archive main .article-info .info, .page main .article-info .info {
+  float: left;
+  margin-right: 20px;
+  height: 29px;
+}
+.article-page main .article-info a, .archive main .article-info a, .page main .article-info a, .article-page main .article-info span, .archive main .article-info span, .page main .article-info span {
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.article-page main .article-info a:hover, .archive main .article-info a:hover, .page main .article-info a:hover {
+  color: #76839B;
+}
+.article-page main .article-info .icon, .archive main .article-info .icon, .page main .article-info .icon {
+  margin-right: 4px;
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.article-page main .article-info .tags a, .archive main .article-info .tags a, .page main .article-info .tags a {
+  margin-right: 3px;
+}
+.article-page main article, .archive main article, .page main article {
+  padding: 20px;
+}
+.article-page main article .post-content, .archive main article .post-content, .page main article .post-content {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 15px;
+  word-break: break-all;
+}
+.article-page main article .post-content ul, .archive main article .post-content ul, .page main article .post-content ul, .article-page main article .post-content ol, .archive main article .post-content ol, .page main article .post-content ol, .article-page main article .post-content img, .archive main article .post-content img, .page main article .post-content img, .article-page main article .post-content pre, .archive main article .post-content pre, .page main article .post-content pre, .article-page main article .post-content blockquote, .archive main article .post-content blockquote, .page main article .post-content blockquote, .article-page main article .post-content h1, .archive main article .post-content h1, .page main article .post-content h1, .article-page main article .post-content h2, .archive main article .post-content h2, .page main article .post-content h2, .article-page main article .post-content h3, .archive main article .post-content h3, .page main article .post-content h3, .article-page main article .post-content h4, .archive main article .post-content h4, .page main article .post-content h4, .article-page main article .post-content h5, .archive main article .post-content h5, .page main article .post-content h5, .article-page main article .post-content p, .archive main article .post-content p, .page main article .post-content p {
+  margin: 0 0 20px 0;
+}
+.article-page main article .post-content img, .archive main article .post-content img, .page main article .post-content img {
+  max-width: 100%;
+}
+.article-page main article .post-content h1, .archive main article .post-content h1, .page main article .post-content h1, .article-page main article .post-content h2, .archive main article .post-content h2, .page main article .post-content h2, .article-page main article .post-content h3, .archive main article .post-content h3, .page main article .post-content h3, .article-page main article .post-content h4, .archive main article .post-content h4, .page main article .post-content h4, .article-page main article .post-content h5, .archive main article .post-content h5, .page main article .post-content h5, .article-page main article .post-content h6, .archive main article .post-content h6, .page main article .post-content h6 {
+  font-weight: 700;
+  color: #444444;
+}
+.article-page main article .post-content h1, .archive main article .post-content h1, .page main article .post-content h1 {
+  font-size: 30px;
+  margin: 50px 0 20px 0;
+}
+.article-page main article .post-content h2, .archive main article .post-content h2, .page main article .post-content h2 {
+  font-size: 25px;
+}
+.article-page main article .post-content h3, .archive main article .post-content h3, .page main article .post-content h3 {
+  font-size: 20px;
+}
+.article-page main article .post-content h4, .archive main article .post-content h4, .page main article .post-content h4 {
+  font-size: 15px;
+}
+.article-page main article .post-content h5, .archive main article .post-content h5, .page main article .post-content h5 {
+  font-size: 12.45px;
+}
+.article-page main article .post-content h6, .archive main article .post-content h6, .page main article .post-content h6 {
+  font-size: 12px;
+}
+.article-page main article .post-content blockquote, .archive main article .post-content blockquote, .page main article .post-content blockquote {
+  border-left: 4px solid #1A1A1A;
+  padding-left: 22.5px;
+  font-size: 17px;
+  color: #686868;
+  font-style: italic;
+}
+.article-page main article .post-content code, .archive main article .post-content code, .page main article .post-content code {
+  font-size: 15px;
+}
+.article-page main article .post-content pre code, .archive main article .post-content pre code, .page main article .post-content pre code {
+  padding: 10px;
+}
+.article-page main article .post-content table td, .archive main article .post-content table td, .page main article .post-content table td {
+  min-width: 90px;
+}
+.article-page main article .post-content p, .archive main article .post-content p, .page main article .post-content p {
+  color: #444444;
+  line-height: 25px;
+}
+.article-page main article .post-content a, .archive main article .post-content a, .page main article .post-content a {
+  color: #6C757D;
+}
+.article-page main article .post-content li, .archive main article .post-content li, .page main article .post-content li {
+  color: #444444;
+  padding: 2px 0;
+}
+.article-page main article .post-content p > code, .archive main article .post-content p > code, .page main article .post-content p > code, .article-page main article .post-content li > code, .archive main article .post-content li > code, .page main article .post-content li > code, .article-page main article .post-content td > code, .archive main article .post-content td > code, .page main article .post-content td > code {
+  background: #EDEDED;
+  color: #333333;
+  padding: 0 4px;
+}
+.article-page main article .post-content .protected p, .archive main article .post-content .protected p, .page main article .post-content .protected p {
+  text-align: center;
+}
+.article-page .post-navigation, .archive .post-navigation, .page .post-navigation {
+  padding: 20px;
+}
+.article-page .post-navigation a, .archive .post-navigation a, .page .post-navigation a {
+  color: #6C757D;
+}
+
+#max-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 1030;
+  opacity: 0;
+  transition: 0.3s;
+}
+#max-img img {
+  max-width: 0;
+  max-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+#max-img .hide-img {
+  width: 40px;
+  height: 40px;
+  color: #F7F7F7;
+  line-height: 40px;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#share-box #qrcode img {
+  margin: 0 auto;
+}
+
+#agree-p {
+  font-weight: 700;
+  font-size: 18px;
+  color: red;
+  position: absolute;
+}
+
+#emoji-box .emoji-classification {
+  padding: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#emoji-box .emoji-select .emoji {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+#emoji-box .emoji-select .emoji:hover {
+  background: #6C757D;
+}
+#emoji-box .emoji-select::-webkit-scrollbar {
+  width: 4px;
+}
+#emoji-box .emoji-select::-webkit-scrollbar-thumb {
+  background: #6C757D;
+}
+#emoji-box .emoji-select::-webkit-scrollbar-track-piece {
+  background: #E2E3E5;
+}
+
+#comments h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#comments .comments-off {
+  padding: 0 20px;
+}
+#comments .comments-lists {
+  padding: 40px 20px 0 20px;
+}
+#comments .comments-lists .comment-list {
+  list-style: none;
+  padding: 0;
+}
+#comments .comments-lists .comment-list .comment-body {
+  border-top: 1px solid #EBF2FC;
+  padding: 20px 0;
+}
+#comments .comments-lists .comment-list .comment-body .comment-box {
+  width: 100%;
+}
+#comments .comments-lists .comment-list .comment-body .comment-author {
+  width: 100%;
+}
+#comments .comments-lists .comment-list .comment-body .avatar {
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  float: left;
+  border-radius: 50%;
+}
+#comments .comments-lists .comment-list .comment-body .comment-info a {
+  line-height: 22px;
+  font-size: 15px;
+  color: #6C757D;
+}
+#comments .comments-lists .comment-list .comment-body .comment-info .comment-time {
+  color: #686868;
+  font-size: 12px;
+  display: block;
+}
+#comments .comments-lists .comment-list .comment-body .comment-reply a {
+  line-height: 30px;
+  font-size: 12px;
+  width: 60px;
+  height: 32px;
+  background: #ffffff;
+  display: block;
+  text-align: center;
+  border: 1px solid #6C757D;
+  border-radius: 4px;
+  color: #6C757D;
+}
+#comments .comments-lists .comment-list .comment-body .comment-reply a:hover {
+  background: #6C757D;
+  color: #ffffff;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content {
+  margin-left: 62px;
+  font-size: 15px;
+  word-break: break-all;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content ul, #comments .comments-lists .comment-list .comment-body .comment-content ol, #comments .comments-lists .comment-list .comment-body .comment-content img, #comments .comments-lists .comment-list .comment-body .comment-content pre, #comments .comments-lists .comment-list .comment-body .comment-content blockquote, #comments .comments-lists .comment-list .comment-body .comment-content h1, #comments .comments-lists .comment-list .comment-body .comment-content h2, #comments .comments-lists .comment-list .comment-body .comment-content h3, #comments .comments-lists .comment-list .comment-body .comment-content h4, #comments .comments-lists .comment-list .comment-body .comment-content h5, #comments .comments-lists .comment-list .comment-body .comment-content p {
+  margin: 0 0 20px 0;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content img {
+  max-width: 100%;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h1, #comments .comments-lists .comment-list .comment-body .comment-content h2, #comments .comments-lists .comment-list .comment-body .comment-content h3, #comments .comments-lists .comment-list .comment-body .comment-content h4, #comments .comments-lists .comment-list .comment-body .comment-content h5, #comments .comments-lists .comment-list .comment-body .comment-content h6 {
+  font-weight: 700;
+  color: #444444;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h1 {
+  font-size: 30px;
+  margin: 50px 0 20px 0;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h2 {
+  font-size: 25px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h3 {
+  font-size: 20px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h4 {
+  font-size: 15px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h5 {
+  font-size: 12.45px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content h6 {
+  font-size: 12px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content blockquote {
+  border-left: 4px solid #1A1A1A;
+  padding-left: 22.5px;
+  font-size: 17px;
+  color: #686868;
+  font-style: italic;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content code {
+  font-size: 15px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content pre code {
+  padding: 10px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content table td {
+  min-width: 90px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content p {
+  color: #444444;
+  line-height: 25px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content a {
+  color: #6C757D;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content li {
+  color: #444444;
+  padding: 2px 0;
+}
+#comments .comments-lists .comment-list .comment-body .comment-content p > code, #comments .comments-lists .comment-list .comment-body .comment-content li > code, #comments .comments-lists .comment-list .comment-body .comment-content td > code {
+  background: #EDEDED;
+  color: #333333;
+  padding: 0 4px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-children {
+  margin-left: 20px;
+}
+#comments .comments-lists .comment-list .comment-body .comment-children li {
+  padding-bottom: 0;
+}
+#comments .comments-lists .comment-list .comment-body .comment-children li .comment-children {
+  margin-left: 0;
+}
+#comments .comments-lists .comment-list .comment-body .respond {
+  background: #EEEEEE;
+}
+#comments .comments-lists .page-navigator .current a {
+  background-color: #6C757D;
+  color: #ffffff;
+}
+#comments .comments-lists .page-navigator a {
+  color: #6c757d;
+}
+#comments .respond {
+  padding: 20px;
+}
+#comments .respond #textarea {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+#comments .respond .comment-user {
+  margin-bottom: 20px;
+}
+#comments .respond a {
+  color: #6C757D;
+}
+
+.container-404 h1 {
+  margin-top: 20px;
+  font-size: 150px;
+  text-align: center;
+  font-weight: 700;
+}
+.container-404 h2 {
+  text-align: center;
+  font-weight: 700;
+}
+.container-404 h5 {
+  text-align: center;
+}
+.container-404 .search-box {
+  margin: 20px 0;
+}
+
+.archives-list {
+  margin-top: 15px;
+}
+.archives-list .archives .page-header {
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  border-radius: 4px;
+}
+.archives-list .archives .page-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.archives-list .archives .page-header span {
+  font-size: 13px;
+  color: #777777;
+}
+.archives-list .archives .post {
+  border: 1px solid #DEDEDE;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+.archives-list .archives .post .header-img {
+  width: 100%;
+  background: #ffffff;
+}
+.archives-list .archives .post .header-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.archives-list .archives .post .header-img a:after {
+  content: "";
+  padding-bottom: 37.5%;
+  display: block;
+}
+.archives-list .archives .post .entry-header .entry-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 20px 12px 20px;
+}
+.archives-list .archives .post .entry-header .entry-title a {
+  color: #222222;
+}
+.archives-list .archives .post .entry-summary {
+  padding: 20px;
+}
+.archives-list .archives .post .entry-summary p {
+  font-size: 15px;
+  color: #444444;
+  line-height: 25px;
+}
+.archives-list .archives .post .read-more {
+  margin: 0;
+  font-size: 15px;
+}
+.archives-list .archives .post .read-more .read-more-btn {
+  width: 140px;
+  border: 1px solid #007ACC;
+  color: #007ACC;
+  padding: 10px 20px;
+}
+.archives-list .archives .post .read-more .read-more-btn span, .archives-list .archives .post .read-more .read-more-btn i {
+  transition: 0.4s;
+}
+.archives-list .archives .post .read-more .read-more-btn i {
+  margin-left: 5px;
+}
+.archives-list .archives .post .read-more .read-more-btn:hover {
+  padding: 10px 17px;
+}
+.archives-list .archives .post .read-more .read-more-btn:hover span {
+  margin: 0 3px;
+}
+.archives-list .archives .post .article-info {
+  padding: 10px 25px;
+}
+.archives-list .archives .post .article-info .info {
+  float: left;
+  margin-right: 20px;
+  height: 29px;
+}
+.archives-list .archives .post .article-info a, .archives-list .archives .post .article-info span {
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.archives-list .archives .post .article-info a:hover {
+  color: #76839B;
+}
+.archives-list .archives .post .article-info .icon {
+  margin-right: 4px;
+  color: #707281;
+  font-size: 12px;
+  line-height: 29px;
+}
+.archives-list .archives .post .article-info .tags a {
+  margin-right: 3px;
+}
+.archives-list .archives .post > .post-title {
+  padding: 20px 25px;
+}
+
+/*独立页面-文章归档*/
+.link-box {
+  background: #F9F9F9;
+  margin: 0 0 20px 0;
+}
+.link-box .link-grid {
+  padding: 15px;
+  border-radius: 4px;
+}
+.link-box .link-grid .link {
+  background: #ffffff;
+  box-shadow: 0 2px 0 rgba(170, 170, 170, 0.1);
+  padding: 10px;
+  display: block;
+}
+.link-box .link-grid .link .link-logo {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+}
+.link-box .link-grid .link .icon-logo {
+  background: #0A73B3;
+  color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+}
+.link-box .link-grid .link .link-name {
+  display: inline-block;
+  line-height: 32px;
+}
+.link-box .link-grid .link p {
+  font-size: 12px;
+  margin: 10px 0 0 0;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.link-box .link-grid .link:hover {
+  box-shadow: 1px 5px 1px rgba(170, 170, 170, 0.1);
+}
+
+.archive-page, .post-page, .link-page {
+  margin-bottom: 20px;
+}
+
+.to-top {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #6C757D;
+  border: 1px solid #D3D3D3;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar section {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .latest-articles-active {
+    height: 222px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container .article-list .post .header-img {
+    width: 100%;
+    background: #ffffff;
+  }
+  .container .article-list .post .header-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .container .article-list .post .header-img a:after {
+    content: "";
+    padding-bottom: 37.5%;
+    display: block;
+  }
+  .container .article-list .post .entry-header .entry-title {
+    font-size: 20px;
+    padding: 20px 20px 12px 20px;
+  }
+  .container .article-list .post .entry-summary {
+    padding: 20px;
+  }
+  .container .article-list .post .article-info {
+    padding: 10px 20px;
+  }
+
+  .article-page main, .page main, .archive main {
+    /*文章标题*/
+    /*文章页的文章信息*/
+  }
+  .article-page main .entry-header .entry-title, .page main .entry-header .entry-title, .archive main .entry-header .entry-title {
+    font-size: 20px;
+    padding: 20px 20px 12px 20px;
+  }
+  .article-page main .article-info, .page main .article-info, .archive main .article-info {
+    padding: 10px 20px;
+  }
+  .article-page main article, .page main article, .archive main article {
+    padding: 20px;
+  }
+
+  .container .col-md-12 {
+    padding: 0 10px;
+  }
+
+  .archives-list .archives .post .header-img {
+    width: 100%;
+    background: #ffffff;
+  }
+  .archives-list .archives .post .header-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .archives-list .archives .post .header-img a:after {
+    content: "";
+    padding-bottom: 37.5%;
+    display: block;
+  }
+  .archives-list .archives .post .entry-header .entry-title {
+    font-size: 20px;
+    padding: 20px 20px 12px 20px;
+  }
+  .archives-list .archives .post .entry-summary {
+    padding: 20px;
+  }
+  .archives-list .archives .post .article-info {
+    padding: 10px 20px;
+  }
+  .archives-list .archives .post .post-title {
+    font-size: 20px;
+  }
+  .archives-list .archives .post .header-img {
+    height: 145px;
+  }
+  .archives-list .archives .page-header .archive-title {
+    font-size: 20px;
+  }
+
+  .sidebar section {
+    margin-left: 0;
+  }
+
+  #emoji-box .emoji-select {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .to-top {
+    right: 10px;
+    bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
